@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Sonam 💖</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-top: 80px;
+      overflow: hidden;
+    }
+    h1 {
+      color: #fff;
+      font-size: 38px;
+    }
+    p {
+      color: #fff;
+      font-size: 18px;
+      margin: 20px;
+    }
+    button {
+      padding: 15px 28px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 12px;
+    }
+    #yes {
+      background-color: #ff1e56;
+      color: white;
+    }
+    #no {
+      background-color: white;
+      color: #ff1e56;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hey Sonam 💖</h1>
+
+  <p>
+    Sooo… I’ve been thinking 😌  
+    <br><br>
+    You make my days better,  
+    my smiles easier,  
+    and my heart a little softer 💕  
+    <br><br>
+    Will you be my Valentine? 💘
+  </p>
+
+  <button id="yes" onclick="yesClicked()">YES 😍</button>
+  <button id="no" onmouseover="moveNo()">Let me think 🙄</button>
+
+  <script>
+    function yesClicked() {
+      document.body.innerHTML = `
+        <h1>YAYYY 💖💖</h1>
+        <p>
+          Guess I’m the luckiest person now 😏  
+          <br><br>
+          Valentine confirmed ✔️  
+          <br>
+          Get ready for  
+          extra love,  
+          extra attention,  
+          and nonstop flirting 💋  
+        </p>
+      `;
+    }
+
+    function moveNo() {
+      const noBtn = document.getElementById("no");
+      noBtn.style.top = Math.random() * 80 + "vh";
+      noBtn.style.left = Math.random() * 80 + "vw";
+    }
+  </script>
+
+</body>
+</html>
